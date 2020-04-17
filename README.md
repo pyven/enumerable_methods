@@ -44,4 +44,4 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 
 ## Contributors
 
-- Miguel Quimson
+- [Miguel Quimson](https://github.com/pyven)
