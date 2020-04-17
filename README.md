@@ -17,16 +17,15 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 
 <ul># Enumerable Methods
   <h3>Features</h3>
-  <p>Re-make these methods and match with documentation expected behavior</p>
-  <li>.each (Only one from Array)</li>
+  <li>.each</li>
   <li>.each_with_index</li>
-  <li>.select (Filter like)</li>
+  <li>.select</li>
   <li>.all?</li>
   <li>.any?</li>
   <li>.none?</li>
   <li>.count</li>
   <li>.map</li>
-  <li>.inject (Reduce like)</li>
+  <li>.inject</li>
 </ul>
 
 <ul>
@@ -39,7 +38,6 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 ### Built With
 
 - Ruby Language <br>
-- Rubocop (Linter) with Stickler (CI Tool)<br>
 - Git, Github and VScode <br>
 
 ## Contributors
