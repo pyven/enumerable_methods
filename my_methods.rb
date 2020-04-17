@@ -60,11 +60,12 @@ module Enumerable
         count
     end
 
-    def my_map
+    def my_map(proc = nil)
         return self.to_enum unless block_given?
 
         result =[]
-        self.my_each { |i| result.push(yield) }
+        self.my_each do |i|
+            proc.nil? ? result.push(proc.call(i)) : result.push(yield(i))
         result
     end
     
@@ -76,8 +77,9 @@ module Enumerable
     end
 
     def multiply_els(ar)
-        self.my_inject {|result,i| result * i}
+        ar.my_inject {|result,i| result * i}
     end
+    
 end
 
 
