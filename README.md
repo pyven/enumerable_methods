@@ -41,3 +41,7 @@ and [Array](https://ruby-doc.org/core-2.4.1/Array.html#method-i-each)
 - Ruby Language <br>
 - Rubocop (Linter) with Stickler (CI Tool)<br>
 - Git, Github and VScode <br>
+
+## Contributors
+
+- Miguel Quimson
