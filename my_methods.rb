@@ -48,7 +48,7 @@ module Enumerable
         self.my_each { |i| validator = false if yield(i) }
     end
 
-    def my_count(arg)
+    def my_count(arg = nil)
         return self.length unless block_given? && arg.nil?
 
         count = 0
@@ -67,9 +67,17 @@ module Enumerable
         self.my_each { |i| result.push(yield) }
         result
     end
+    
+    def my_inject(result = self[0])
+        self.my_each do |i|
+            result = yield(result, i)
+        end
+        result
+    end
 
-        
-        
+    def multiply_els(ar)
+        self.my_inject {|result,i| result * i}
+    end
 end
 
 
